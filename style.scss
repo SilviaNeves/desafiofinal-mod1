@@ -1,0 +1,168 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EFEEF3;
+    font-family: "Kodchasan", sans-serif;
+}
+
+header {
+    display: flex;
+    width: 100vw;
+    min-height:5vh;
+
+
+    }
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EFEEF3 ;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    
+
+    @media(max-width:800px){
+        display: flex;
+        flex-direction: column;
+    }
+}
+    .logo{
+        width: 50px;
+
+        @media(max-width: 800px){
+        width: 100px;
+        position: absolute;
+        top: 0;
+    }
+}
+
+    ul{
+        list-style-type: none;
+        display: flex;
+        padding:  10px;
+
+        @media(max-width:800px){
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+    li{
+        font-size: 1.5em;
+        font-weight: 400;
+        color: #000000;
+        margin: 15px 5px 0 10px;
+        }
+
+        @media(max-width:800px){
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+        a{
+            text-decoration: none;
+            color: #000000;
+        }
+    }
+
+    .backgroundimage{
+        width: 100%;
+        height: auto;
+
+        @media(max-width:800px) {
+        display: none;
+                    }
+    }
+main {
+    min-height: 90vh;
+    padding-top: 70px;
+}
+.sectionum{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: 0 auto;
+
+  
+    figure{
+        width: 50%;
+
+        @media (max-width:800px){
+            width: 100%;
+        }
+    }
+    img{
+        width: 100%;
+        border-radius: 20px;
+        margin: 10px 20px;
+    }
+}  
+
+    div{
+        display: flex;
+        width: 50%;
+        text-align: left;
+        flex-direction: column;
+
+        @media(max-width: 800px){
+        width: 100%;
+        text-align: center;
+    }
+    
+    h1{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+    color: #000000;
+    }
+
+    p{
+        padding: 10px;
+        font-size: 1.5em;
+        font-weight: 400;
+        color: #000000;
+        text-align: center;
+    }
+}
+
+.sectiondois {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90vw;
+    margin: 0 auto;
+
+    h2{
+        font-size: 2em;
+        font-weight: 400;
+        margin:  10px 0;
+
+        @media(max-width: 800px){
+            margin: 60px 0;
+            font-size: 1.5em;
+        }
+
+    }
+
+    figure{
+        display: flex;
+        flex-wrap: wrap;
+        width: 20vw;
+        img{
+            padding: 0 10px;
+
+            @media(max-width: 800px){
+                width: 100%;
+                margin: 100px;
+            }
+            }
+        }
+}
